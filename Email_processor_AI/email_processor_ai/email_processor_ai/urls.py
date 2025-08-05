@@ -1,5 +1,5 @@
 """
-URL configuration for email_processor_ai project.
+URL configuration for priceHawk_ai_api project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -14,9 +14,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include  # Import 'include'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('email_processor_app.urls')),  # Include myapp's URLs
 ]

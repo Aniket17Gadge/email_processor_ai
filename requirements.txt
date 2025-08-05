@@ -3,3 +3,5 @@ langgraph
 langchain_community
 langchain-core
 langchain-ollama
+langchain_groq
+dotenv
